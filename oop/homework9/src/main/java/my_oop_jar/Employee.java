@@ -19,8 +19,13 @@ public class Employee {
         return salary;
     }
 
+    public void setSalary(int newSalary) {
+        this.salary = newSalary;
+    }
+
     // Add function gossip
     public void gossip(Employee c, String s) {
         return;
     }
+
 }
