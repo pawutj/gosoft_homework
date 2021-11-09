@@ -1,3 +1,7 @@
 {
-  "java.project.sourcePaths": ["java_basic", "algo"]
+  "java.project.sourcePaths": [
+    "java_basic",
+    "algo",
+    "oop/homework9/src/main/java/my_oop_jar"
+  ]
 }
