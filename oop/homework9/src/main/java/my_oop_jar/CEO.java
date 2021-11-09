@@ -10,10 +10,18 @@ public class CEO extends Employee {
     };
 
     public void work(Employee luckyEmployee) {
-        // this.fire(luckyEmployee);
-        // this.hire(luckyEmployee);
-        // this.seminar();
+        this.fire(luckyEmployee);
+        this.hire(luckyEmployee);
+        this.seminar();
         this.golf();
+    }
+
+    public void fire(Employee luckyEmployee) {
+        System.out.printf("%s has been fired! Dress with :%s\n", luckyEmployee.firstname, luckyEmployee.dressCode);
+    }
+
+    public void hire(Employee luckyEmployee) {
+        System.out.printf("%s has been hired back! Dress with :%s\n", luckyEmployee.firstname, luckyEmployee.dressCode);
     }
 
     public void assignNewSalary(Employee luckyEmployee, int newSalary) {
@@ -26,14 +34,18 @@ public class CEO extends Employee {
             System.out.printf("%s's salary is less than before!!\n", luckyEmployee.firstname);
         else {
             luckyEmployee.setSalary(newSalary);
-            System.out.printf("%s's salary has been set to %d", luckyEmployee.firstname, luckyEmployee.getSalary());
+            System.out.printf("%s's salary has been set to %d\n", luckyEmployee.firstname, luckyEmployee.getSalary());
         }
 
     }
 
+    private void seminar() { // simulate private method
+        this.dressCode = "suit";
+        System.out.println("He is going to seminar Dress with :" + this.dressCode);
+    };
+
     private void golf() { // simulate private method
-        // this.dressCode = "golf_dress";
-        // System.out.println("He goes to golf club to find a new connection. Dress with
-        // :" + this.dressCode);
+        this.dressCode = "golf_dress";
+        System.out.println("He goes to golf club to find a new connection. Dress with :" + this.dressCode);
     };
 }
