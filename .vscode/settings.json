@@ -3,5 +3,6 @@
     "java_basic",
     "algo",
     "oop/homework9/src/main/java/my_oop_jar"
-  ]
+  ],
+  "java.configuration.updateBuildConfiguration": "interactive"
 }
