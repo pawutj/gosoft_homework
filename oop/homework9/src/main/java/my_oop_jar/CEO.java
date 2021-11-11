@@ -1,10 +1,18 @@
 package my_oop_jar;
 
 public class CEO extends Employee {
-    public CEO(String firstnameInput, String lastnameInput, int salaryInput) {
+    public String id;
+    public String type;
+    public CEO(String id ,String firstnameInput, String lastnameInput, int salaryInput , String type) {
         super(firstnameInput, lastnameInput, salaryInput);
+        this.id = id;
+        this.type = type;
     }
 
+    public CEO(String firstnameInput, String lastnameInput, int salaryInput) {
+        super(firstnameInput, lastnameInput, salaryInput);
+ 
+    }
     public int getSalary() {
         return super.getSalary() * 2;
     };
