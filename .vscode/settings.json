@@ -2,7 +2,8 @@
   "java.project.sourcePaths": [
     "java_basic",
     "algo",
-    "oop/homework9/src/main/java/my_oop_jar"
+    "oop/homework9/src/main/java/my_oop_jar",
+    "project_ecom",
   ],
   "java.configuration.updateBuildConfiguration": "interactive"
 }

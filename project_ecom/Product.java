@@ -1,3 +1,5 @@
+package project_ecom;
+
 public class Product {
     public String ID;
     public String Name;

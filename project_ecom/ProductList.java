@@ -1,3 +1,8 @@
+package project_ecom;
+
+import java.util.HashMap;
+import java.util.Iterator;
+
 public class ProductList {
     public HashMap<String, Product> ProductHashMap;
 
@@ -9,7 +14,16 @@ public class ProductList {
         this.ProductHashMap.put(temp.ID, temp);
     }
 
+    public void removeProduct(String ID) {
+        this.ProductHashMap.remove(ID);
+    }
+
     public void showAllProduct() {
-        System.out.println(ProductHashMap);
+        Iterator<String> itr = ProductHashMap.keySet().iterator();
+        while (itr.hasNext()) {
+            String key = itr.next();
+            Product temp = ProductHashMap.get(key);
+            System.out.printf("ID :%s , Name : %s , Price : %d\n", temp.ID, temp.Name, temp.Price);
+        }
     }
 }
