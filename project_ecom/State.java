@@ -6,7 +6,11 @@ import java.util.ArrayList;
 public class State {
     public boolean isMain = true;
     public boolean isAdmin = false;
-    public ArrayList<Product> shoppingCart = new ArrayList<>();
+    public ArrayList<Product> shoppingCart;
+
+    public State() {
+        shoppingCart = new ArrayList<Product>();
+    }
 
     public static State getInstance() {
         if (instance == null)

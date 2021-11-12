@@ -18,6 +18,12 @@ public class ProductList {
         this.ProductHashMap.remove(ID);
     }
 
+    public Product getProduct(String ID) {
+        Product temp = this.ProductHashMap.get(ID);
+        System.out.println("test");
+        return temp;
+    }
+
     public void showAllProduct() {
         Iterator<String> itr = ProductHashMap.keySet().iterator();
         while (itr.hasNext()) {
