@@ -43,7 +43,6 @@ public class Project {
         System.out.println("What Product id which you remove?");
 
         int i = input.nextInt();
-        System.out.println(i);
         String s = String.valueOf(i);
         state.removeProductFromCart(s);
 
