@@ -90,7 +90,7 @@ public class Project {
         }
 
         if (n == 4) {
-            state.isMain = false;
+            state.isMain = true;
         }
 
         readCommand(state, productList);
