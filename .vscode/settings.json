@@ -5,5 +5,5 @@
     "oop/homework9/src/main/java/my_oop_jar",
     "project_ecom",
   ],
-  "java.configuration.updateBuildConfiguration": "interactive"
+  "java.configuration.updateBuildConfiguration": "automatic"
 }
