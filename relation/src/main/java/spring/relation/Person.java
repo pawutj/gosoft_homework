@@ -7,7 +7,7 @@ import javax.persistence.GenerationType;
 import lombok.Data;
 import javax.persistence.Table;
 import java.util.List;
-
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import javax.persistence.OneToMany;
 
 @Data
@@ -16,10 +16,10 @@ import javax.persistence.OneToMany;
 public class Person {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    private Long id;
     private String fullName;
     private Integer status;
     @OneToMany(mappedBy = "person")
-    private List<BankAccount> backAccount;
+    private List<BankAccount> bankAccount;
 
 }
