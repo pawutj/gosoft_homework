@@ -7,8 +7,13 @@ import java.util.Optional;
 
 @Service
 public class PersonService {
-    @Autowired
+
     private PersonRepository personRepository;
+
+    @Autowired
+    public PersonService(PersonRepository personRepository) {
+        this.personRepository = personRepository;
+    }
 
     public List<Person> retrievePerson() {
         return (List<Person>) personRepository.findAll();
