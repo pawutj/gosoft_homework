@@ -28,6 +28,11 @@ public class BankAccount {
 
     }
 
+    public BankAccount(Integer amount, Person person) {
+        this.amount = amount;
+        this.person = person;
+    }
+
     public BankAccount(Integer amount) {
         this.amount = amount;
     }
