@@ -24,4 +24,12 @@ public class BankAccount {
     @JsonIgnore
     private Person person;
 
+    public BankAccount() {
+
+    }
+
+    public BankAccount(Integer amount) {
+        this.amount = amount;
+    }
+
 }

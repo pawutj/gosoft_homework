@@ -22,4 +22,9 @@ public class Person {
     @OneToMany(mappedBy = "person")
     private List<BankAccount> bankAccount;
 
+    public Person(String fullName, Integer status) {
+        this.fullName = fullName;
+        this.status = status;
+    }
+
 }

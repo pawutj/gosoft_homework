@@ -18,9 +18,22 @@ public class BankAccountController {
     @Autowired
     BankAccountService bankAccountService;
 
+    @Autowired
+    PersonService personService;
+
     @PostMapping("/{personId}/bank_account")
     public ResponseEntity<?> postBankAccount(@PathVariable Long personId, @RequestBody BankAccount body) {
         BankAccount bankAccount = bankAccountService.createBankAccount(personId, body);
+        return ResponseEntity.status(HttpStatus.CREATED).body(bankAccount);
+    }
+
+    @PostMapping("/persons/open_account")
+    public ResponseEntity<?> openAccount(@RequestBody BankAccountRequest bankAccountRequest) {
+
+        Person person = new Person(bankAccountRequest.getPersonFullName(), bankAccountRequest.getPersonStatus());
+        person = personService.createPerson(person);
+        BankAccount bankAccount = new BankAccount(bankAccountRequest.getAmount());
+        bankAccount = bankAccountService.createBankAccount(person.getId(), bankAccount);
         return ResponseEntity.status(HttpStatus.CREATED).body(bankAccount);
     }
 }
