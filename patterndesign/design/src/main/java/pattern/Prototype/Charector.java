@@ -23,4 +23,16 @@ public class Charector implements ICloneable {
         c.job = this.job;
         return c;
     }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public int getLevel() {
+        return this.level;
+    }
+
+    public String getJob() {
+        return this.job;
+    }
 }
