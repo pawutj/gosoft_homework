@@ -10,6 +10,6 @@ public class CortexCompose extends ReactCompose {
     public String getStatus() {
 
         // TODO Auto-generated method stub
-        return super.getReactComponent() + "with Cortex ";
+        return super.getReactComponent().getStatus() + "with Cortex ";
     }
 }

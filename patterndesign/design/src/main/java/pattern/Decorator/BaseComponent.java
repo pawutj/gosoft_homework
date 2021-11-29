@@ -4,7 +4,7 @@ public class BaseComponent implements ReactComponent {
 
     @Override
     public String getStatus() {
-        return "React Component";
+        return "React Component ";
     }
 
     @Override

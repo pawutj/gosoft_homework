@@ -10,6 +10,6 @@ public class StateCompose extends ReactCompose {
     public String getStatus() {
 
         // TODO Auto-generated method stub
-        return super.getReactComponent() + "with State ";
+        return this.getReactComponent().getStatus() + "with State ";
     }
 }
