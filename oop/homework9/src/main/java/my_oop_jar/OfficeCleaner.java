@@ -11,19 +11,23 @@ public class OfficeCleaner extends Employee {
     }
 
     public void Clean() {
+        System.out.println("Clean");
 
     }
 
     public void KillCoachroach() {
+        System.out.println("Kill Coachroach");
 
     }
 
     public void DecorateRoom() {
 
+        System.out.println("DecorateRoom");
     }
 
     public void WelcomeGuest() {
 
+        System.out.println("WelcomeGuest");
     }
 
     public void work() {

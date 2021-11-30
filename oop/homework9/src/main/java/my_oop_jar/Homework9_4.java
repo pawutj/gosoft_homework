@@ -51,8 +51,30 @@ public class Homework9_4 {
 
         }
 
-        for (int i = 0; i < employees.size(); i++)
-            System.out.println(employees.get(i));
+        for (int i = 0; i < employees.size(); i++) {
+            if (employees.get(i).getClass() == Programmer.class) {
+                Programmer e = (Programmer) employees.get(i);
+                System.out.printf("ID:%s fname:%s lname:%s salary:%d type:%s\n", e.id, e.firstname, e.lastname,
+                        e.getSalary(), e.type);
+                e.work();
+            }
+
+            if (employees.get(i).getClass() == OfficeCleaner.class) {
+                OfficeCleaner e = (OfficeCleaner) employees.get(i);
+                System.out.printf("ID:%s fname:%s lname:%s salary:%d type:%s\n", e.id, e.firstname, e.lastname,
+                        e.getSalary(), e.type);
+                e.work();
+            }
+
+            if (employees.get(i).getClass() == CEO.class) {
+                CEO e = (CEO) employees.get(i);
+                System.out.printf("ID:%s fname:%s lname:%s salary:%d type:%s\n", e.id, e.firstname, e.lastname,
+                        e.getSalary(), e.type);
+                Employee _e = new Employee("Employee", "Employee", 123);
+                e.work(_e);
+            }
+
+        }
 
     }
 }
