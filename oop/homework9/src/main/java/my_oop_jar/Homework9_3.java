@@ -31,8 +31,10 @@ public class Homework9_3 {
             employees.add(t);
         }
 
-        for (int i = 0; i < employees.size(); i++)
+        for (int i = 0; i < employees.size(); i++) {
             System.out.println(employees.get(i));
+            employees.get(i).work();
+        }
 
     }
 }
