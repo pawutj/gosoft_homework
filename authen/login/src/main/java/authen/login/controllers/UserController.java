@@ -13,8 +13,10 @@ import authen.login.entities.User;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
+@RequestMapping("/user")
 public class UserController {
     @Autowired
     UserService userService;
