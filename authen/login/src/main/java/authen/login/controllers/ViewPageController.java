@@ -1,4 +1,4 @@
-package authen.login.Controller;
+package authen.login.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
